@@ -1,7 +1,5 @@
 # Router
 --
-<?php
-
 use System\Router;
 
 use App\Controllers\Message\IndexController as Main;
