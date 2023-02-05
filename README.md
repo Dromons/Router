@@ -17,6 +17,13 @@ Router::group ('/message', function (){
     Router::get ('/user/@id{:id}', [new App\Controller\User, 'Views']);
 });
 
+Router::group ('/message', function (){
+    Router::group ('/add', function (){
+        Router::get ('/{:id}', new App\Controller\Add);
+        Router::get ('/id{:id}', new App\Controller\AddId);
+    });
+});
+
 // OR
 
 Router::get ('/', function () {
