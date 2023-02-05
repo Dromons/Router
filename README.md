@@ -17,8 +17,12 @@ Router::group ('/message', function (){
     Router::get ('/user/@id{:id}', [new App\Controller\User, 'Views']);
 });
 
-// hostname/
-Router::get ('/', new App\Controller\Index);
+// OR
+
+Router::get ('/', function () {
+    return "Index File View";
+});
+s
 ```
 Next String
 
