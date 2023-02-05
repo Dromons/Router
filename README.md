@@ -9,7 +9,7 @@ In index.php file
 ```
 // message/save
 // message/add/123 in PHP class $id = 123
-// message/user/id123 in PHP class $id = 123
+// message/user/@id123 in PHP class $id = 123
 
 Router::group ('/message', function (){
     Router::post ('/save', new App\Controller\Save);
