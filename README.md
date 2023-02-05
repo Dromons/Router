@@ -22,7 +22,7 @@ Router::group ('/message', function (){
 Router::get ('/', function () {
     return "Index File View";
 });
-s
+
 ```
 Next String
 
