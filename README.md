@@ -30,6 +30,13 @@ Router::get ('/', function () {
     return "Index File View";
 });
 
+
+// OR
+
+Router::get ('/{:controller}/{:action}/{:param}', function ($controller, $action, $param) {
+    return "Index File View";
+});
+
 ```
 Next String
 
